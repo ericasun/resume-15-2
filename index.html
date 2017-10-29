@@ -2,83 +2,141 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>方方的简历</title>
-
-    <link href="a.css" rel="stylesheet">
-    <style>
-
+    <title>我的个人简历</title>
+    <link rel = "stylesheet" href="./a.css">
+    <style type="text/css">
+        .icon {
+            width:1em;
+            height:1em;
+            vertical-align: -0.15em;
+            fill:currentColor;
+            overflow:hidden;
+        }
     </style>
 </head>
 <body>
-
-    <div class="top clearfix">
-        <div class="top-left">
-            <a href = "#">
-                <span class="rs">RS</span><span class="card">card</span>
+    <div class = "topNavBar">
+        <div class="tpNavBar-inner clearfix">
+            <a class="logo" href="#" alt="logo" style="float:left;">
+                <span class = "rs">RS</span>
+                <span class = card>card</span>
             </a>
-
-        </div>
-
-        <div class="top-right">
-            <ul class="clearfix">
-                <li><a href="#">关于</a></li>
-                <li><a href="#">技能</a></li>
-                <li><a href="#">作品</a></li>
-                <li><a href="#">博客</a></li>
-                <li><a href="#">日历</a></li>
-                <li><a href="#">联系方式</a></li>
-                <li><a href="#">其他</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <img src="img/rs-cover.jpg" class="top-bg">
-
-    <div class="middle clearfix">
-        <div class="middle-left"><img src="img/avatar.jpg"></div>
-
-        <div class="middle-right">
-            <div>Hello</div>
-            <h1>方应杭</h1>
-            <p>前端开发工程师</p>
-            <hr>
-            <dl>
-                <dt>年龄</dt>
-                <dd>18</dd>
-                <dt>所在城市</dt>
-                <dd>北京</dd>
-                <dt>邮箱</dt>
-                <dd>fangyinghang@foxmail.com</dd>
-                <dt>手机</dt>
-                <dd>13812345678</dd>
-            </dl>
+            <nav style = "float:right;">
+                <ul class = "clearfix">
+                    <li>
+                        <a href="#">关于</a>
+                    </li>
+                    <li>
+                        <a href="#">技能</a>
+                    </li>
+                    <li>
+                        <a href="#">作品</a>
+                    </li>
+                    <li>
+                        <a href="#">博客</a>
+                    </li>
+                    <li>
+                        <a href="#">日历</a>
+                    </li>
+                    <li>
+                        <a href="#">联系方式</a>
+                    </li>
+                    <li>
+                        <a href="#">其他</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 
-    <div><a href="#">下载 PDF 简历</a></div>
+    <div class="banner">
+        <div class="mask"></div>
+    </div>
 
-    <p><div>方应杭， 资深前端工程师，资深前端讲师，现在在 饥人谷 教前端课程。</div>
-        <div>技能：前端开发，Rails 开发，Node.js 开发</div>
-    </div></p>
+    <main>
+        <div class="userCard">
+            <div class="pictureAndTest clearfix">
+                <div class="picture">
+                    <img src="./img/avatar.jpg" width=299px height=347px alt = "头像">
+                </div>
+                <div class="text">
+                    <span class="welcome">Hello
+                        <span class = "triangle"></span>
+                    </span>
+                    <h1>方应杭</h1>
+                    <p>前端开发工程师</p>
+                    <hr>
+                    <dl>
+                        <dt>年龄</dt>
+                        <dd>18</dd>
+                        <dt>所在城市</dt>
+                        <dd>北京</dd>
+                        <dt>邮箱</dt>
+                        <dd>eieiei@foxmail.com</dd>
+                        <dt>手机</dt>
+                        <dd>137383838338</dd>
+                    </dl>
+                </div>
+            </div>
+            <footer class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden = "true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Ankerwebicno-"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-Ankerwebicon-"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+            </footer>
+        </div>
 
-    <h2>技能</h2>
-    <ol>
-        <li>HTML 5 & CSS 3</li>
-        <li>JavaScript</li>
-        <li>jQuery</li>
-        <li>Vue</li>
-        <li>React</li>
-        <li>HTTP</li>
-    </ol>
+        <a class="button" href="#">下载 PDF 简历</a>
 
-    <h2>作品集</h2>
-    <ol>
-        <li>框架</li>
-        <li>原生JS&CSS</li>
-    </ol>
+        <p>
+            方应杭， 资深前端工程师，资深前端讲师，现在在 饥人谷 教前端课程。
+            <br> 技能：前端开发，Rails 开发，Node.js 开发
+        </p>
+    </main>
 
+    <section>
+        <h2>技能</h2>
+        <ol>
+            <li>HTML 5 &amp; CSS 3</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+            <li>Vue</li>
+            <li>React</li>
+            <li>HTTP</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>作品集</h2>
+        <nav>
+            <ol>
+                <li>所有</li>
+                <li>框架</li>
+                <li>原生JS&Css</li>
+            </ol>
+        </nav>
+
+        <div class="jobs">
+            <div class="big"></div>
+            <div class="small"></div>
+            <div class="small"></div>
+        </div>
+    </section>
 </body>
 </html>
